@@ -1125,13 +1125,6 @@ body.page-error .hero-header a::after {
     margin-top: 28px;
   }
 
-  .story-section {
-    min-height: 0;
-    grid-template-columns: 1fr;
-    gap: 36px;
-    padding: 36px 24px;
-  }
-
   .signature-section {
     padding: 0 16px 28px;
   }
@@ -1231,6 +1224,24 @@ body.page-error .hero-header a::after {
 }
 
 @media (max-width: 760px) {
+  .nav-panel {
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+  }
+
+  .story-section {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 36px 24px;
+  }
+
+  .story-image {
+    order: -1;
+  }
+
   .hero-header,
   .menu-button {
     top: 92px;
